@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+        .grafico-container {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+    
+    <div class="container">
+        <h1>Best Selling Products</h1>
+        
+        <section>
+            <h2>Best Selling Products Chart</h2>
+            <div class="grafico-container">
+                <!-- Embed the Plotly chart -->
+                {{ grafico|safe }}
+            </div>
+        </section>
+    </div>
+{% endblock %}

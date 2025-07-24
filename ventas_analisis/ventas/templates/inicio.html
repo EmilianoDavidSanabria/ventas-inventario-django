@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Management Application</h1>
+<p>From here, you can manage products, sales, and view statistics and interactive charts.</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="{% url 'agregar_producto' %}" class="btn btn-primary">Add Product</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'agregar_venta' %}" class="btn btn-primary">Add Sale</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'lista_ventas' %}" class="btn btn-primary">Sales List</a>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <a href="{% url 'estadisticas_ventas' %}" class="btn btn-secondary">View Statistics</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'graficos_ventas' %}" class="btn btn-secondary">View Sales Charts</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'ventas_filtradas' %}" class="btn btn-secondary">Filter Sales</a>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <a href="{% url 'graficos_interactivos' %}" class="btn btn-secondary">Interactive Charts</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'estadisticas_avanzadas' %}" class="btn btn-success">Advanced Statistics</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'productos_mas_vendidos' %}" class="btn btn-success">Best Selling Products</a>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <a href="{% url 'registro_usuario' %}" class="btn btn-warning">Register User</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'login_usuario' %}" class="btn btn-warning">Log In</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'logout_usuario' %}" class="btn btn-danger">Log Out</a>
+    </div>
+</div>
+{% endblock %}

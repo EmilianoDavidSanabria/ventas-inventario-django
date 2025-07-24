@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1>Advanced Sales Statistics</h1>
+        
+        <section>
+            <h2>Monthly Sales</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Total Sales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for venta in ventas_mensuales %}
+                        <tr>
+                            <td>{{ venta.mes }}</td>
+                            <td>${{ venta.total }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="2">No data available.</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Quarterly Sales</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Total Sales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for venta in ventas_trimestrales %}
+                        <tr>
+                            <td>{{ venta.trimestre }}</td>
+                            <td>${{ venta.total }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="2">No data available.</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </div>
+{% endblock %}
