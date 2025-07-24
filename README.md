@@ -35,8 +35,6 @@ Proyecto web desarrollado con Django y Django REST Framework para la gestión de
 
 ---
 
-## ⚙️ Cómo ejecutar el proyecto localmente
-
 1. Cloná el repositorio:
 
 ```bash
