@@ -275,3 +275,9 @@ def exportar_ventas_excel(request):
         return response
     except Exception as e:
         return HttpResponse(f'Error al exportar los datos: {e}', status=500)
+
+
+from django.http import HttpResponse
+
+def health_check(request):
+    return HttpResponse("OK", content_type="text/plain")
