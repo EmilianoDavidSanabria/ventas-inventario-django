@@ -279,5 +279,6 @@ def exportar_ventas_excel(request):
 
 from django.http import HttpResponse
 
+#Entran la página cada 10 minutos
 def health_check(request):
     return HttpResponse("OK", content_type="text/plain")
