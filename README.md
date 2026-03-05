@@ -30,7 +30,7 @@ Proyecto web desarrollado con Django y Django REST Framework para la gestión de
 - Plotly
 - Pandas
 - OpenPyXL
-- SQLite3
+- PostgreSQL
 - Bootstrap
 
 ---
