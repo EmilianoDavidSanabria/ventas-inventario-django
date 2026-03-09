@@ -2,6 +2,8 @@
 
 Proyecto web desarrollado con Django y Django REST Framework para la gestión de productos, ventas, estadísticas, exportación de datos, seguridad avanzada y rendimiento optimizado. Ideal para negocios que necesiten controlar su inventario y visualizar métricas.
 
+#APP DESPLEGADA: https://ventas-inventario-django-5.onrender.com/
+
 ---
 
 ## 🧩 Funcionalidades principales
