@@ -17,6 +17,10 @@ Proyecto web desarrollado con Django y Django REST Framework para la gestión de
 - Seguridad robusta (XSS, CSRF, HSTS, CSP, hashing de contraseñas)
 - Autenticación con JWT (SimpleJWT)
 - Control de tráfico con throttling de DRF
+- tests: tests con `Django TestCase` cubriendo lógica de CRUD, cálculos de stock y validación de exportación Excel (`OpenPyXL`).
+- Verificación de endpoints con `Django REST Framework` y autenticación `JWT`.
+- Tests de integridad para renderizado de gráficos `Matplotlib` y `Plotly` (MIME types).
+- Docker Entorno contenedorizado con `Dockerfile` y `docker-compose.yml` (App + PostgreSQL).
 
 ---
 
